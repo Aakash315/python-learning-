@@ -98,9 +98,9 @@ def tops(values):
             frequency[item] = 1
 
     rankings = dict(sorted(frequency.items(), key=lambda item: item[1], reverse=True))
-    top10 = list(rankings.items())[:5]
+    top5 = list(rankings.items())[:5]
 
-    for item, count in top10:
+    for item, count in top5:
         rank += 1
         print(f"{rank}. {item}: {count} times")
     
@@ -135,7 +135,6 @@ print(f"Average Post Length: {average_post_length:.2f} words")
 print("")
 
 print("🔥 Top 10 Most Common Words:")
-# tops(all_words)
 tops_with_percentage(all_words, total_word)
 
 
