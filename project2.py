@@ -1,3 +1,5 @@
+# STUDENT GRADING SYSTEM
+
 student_number = input("Enter number of student: ")
 
 students_all_data =[]
